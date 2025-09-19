@@ -1,12 +1,34 @@
-# React + Vite
+# React API Fetch Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to fetch API data using **fetch** and **axios**, display the results on separate pages with **React Router v6**, and style the UI with **Bootstrap 5**.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Fetch API data in **two ways**:
+  - `fetch` → Posts API
+  - `axios` → Todos API
+- Two separate pages:
+  - `/` → Todos Page
+  - `/posts` → Posts Page
+- Navigation with **React Router v6**
+- Simple **Error Page** for invalid routes
+- Responsive UI with **Bootstrap**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- React 18
+- React Router v6
+- Bootstrap 5
+- Axios & Fetch API
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├── api/
+│ ├── fetch.js # Fetch API for Posts
+│ └── axios.js # Axios API for Todos
+├── components/
+│ ├── Navbar.jsx
+│ └── ErrorPage.jsx
+├── ShowPosts.jsx # Posts Page
+├── ShowTodos.jsx # Todos Page
+└── App.jsx # Main App with Router
+
